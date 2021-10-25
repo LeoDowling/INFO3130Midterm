@@ -1,0 +1,369 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#site_wrap{
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(0, 272px)) 1fr;
+    grid-gap: 0px;
+    grid-template-areas: "nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar"
+        "contentBlock1 contentBlock1 contentBlock1 contentBlock1 contentBlock1 contentBlock1"
+        "contentBlock2 contentBlock2 contentBlock2 contentBlock2 contentBlock2 contentBlock2"
+        "contentBlock3 contentBlock3 contentBlock3 contentBlock4 contentBlock4 contentBlock4"
+        "footerBlock footerBlock footerBlock footerBlock footerBlock footerBlock"
+}
+
+.nav_bar{
+    background-color: #0D0D0D;
+    grid-area: nav_bar; 
+    height: 4vh;
+    position: fixed;
+    font-family: "Lucida Console", Helvetica, sans-serif;
+    width: 100%;
+    max-width: 100vw;
+    display: table;
+    border: 1px solid #E1DCC4;
+}
+
+
+.nav_bar a{
+    padding-top: 1em;
+    float:right;
+    padding-bottom: 1vh;
+    max-width: 100vw;
+    height: auto;
+    color: inherit;
+    text-decoration: inherit;
+}
+.nav_bar #user{
+    float: right;
+    height:auto;
+    max-width:35px;
+    padding-top: .5em;
+    padding-right: 1em;
+}
+
+
+.nav_bar #logo{
+    float:left;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    height:auto;
+    max-width:42px;
+}
+
+
+.nav_bar #navItem1{
+    padding-left: 2vw;
+    padding-right: 4vw;
+    color: #E1DCC4;
+    max-width: 100%;
+    display:inline-block;
+    height:auto;
+}
+.nav_bar #navItem1:hover{
+    color: #F0B7B4;
+}
+
+.nav_bar #navItem2{
+    padding-left: 2vw;
+    color: #E1DCC4;
+    display: inline-block;
+    max-width: 100%;
+    height:auto;
+}
+.nav_bar #navItem2:hover{
+    color: #F0B7B4;
+}
+.nav_bar #navItem3{
+    padding-left: 2vw;
+    color: #E1DCC4;
+    display: inline-block;
+    max-width: 100%;
+    height:auto;
+}
+.nav_bar #navItem3:hover{
+    color: #F0B7B4;
+}
+.nav_bar #navItem4{
+    padding-left: 2vw;
+    color: #E1DCC4;
+    display: inline-block;
+    max-width: 100%;
+    height:auto;
+}
+.nav_bar #navItem4:hover{
+    color: #F0B7B4;
+}
+
+.contentBlock1{
+    background-color: #0D0D0D;
+    grid-area: contentBlock1;
+    padding-top: 3em;
+    height: auto;
+    position: static; 
+    max-width: 100%;
+    padding-bottom: 2em;
+    
+}
+
+.contentBlock1 h1 {
+    position: absolute;
+    top: 60;
+    font-family: "Yu Gothic", Helvetica, sans-serif;
+    padding-left: 40vw;
+    color: #C9C6BD;
+    float: left;
+    
+}
+
+
+
+.contentBlock1 #bank {
+    position: absolute;
+    top: 60;
+    padding-left: 45vw;
+    font-family: "Yu Gothic", Helvetica, sans-serif;
+    padding-right: 49vw;
+    color: #F13343;
+    float: right;
+    
+}
+.contentBlock1 h3{
+    color: #C9C6BD;
+    float:right;
+    padding-left: 40vw;
+    position: absolute;
+    top: 150;
+}
+
+.contentBlock1 p {
+    font-family: "Yu Gothic", Helvetica, sans-serif;
+    color: #C9C6BD;
+    max-width: 40vw;
+    padding-right: 20vw;
+    padding-left: 40vw;
+    height: auto;
+    max-height: 100vh;
+    float: right;
+}
+
+.contentBlock1 img{
+    padding-left: 1em;
+    padding-top: 2em;
+    max-width: 40vw;
+    min-width: 10vw;
+    height:auto;
+    float:left;
+    border: none;
+}
+
+.contentBlock2{
+    background-color: #C9C6BD;
+    grid-area: contentBlock2;
+    height: auto;
+    position: static;
+    align-content: center;
+    color: #3B3D4F;
+    padding-bottom: 2em;
+    font-family: "Yu Gothic", Arial, sans-serif;
+    
+}
+.contentBlock2 h1{
+    text-align: center;
+    
+}
+.contentBlock2 #leftPic{
+    background: white;
+    
+    max-width: 350px;
+    height:auto;
+    border: 2px solid black;
+    padding: 1em;
+    padding-top: 2em;
+	border-radius:30px;
+    margin-left: 8vw;
+    float:left;
+    border: none;
+}
+.contentBlock2 #rightPic{
+    background: white;
+    background-size: 194px 194px;
+    border: 2px solid black;
+    margin-top: 2em;
+    padding: 1em;
+    padding-top: 1em;
+	border-radius:30px;
+    margin-right: 8vw;
+    float:right;
+    border: none;
+}
+.contentBlock2 #rightText{
+    float: right;
+    padding-right: 40vw;
+}
+.contentBlock2 #leftText{
+    float: left;
+    padding-left: 40vw;
+}
+.contentBlock2 #rightP{
+    width: 40vw;
+    padding-right: 35vw;
+    height: auto;
+    float:right;
+}
+.contentBlock2 #leftP{
+    float: left;
+    width: 40vw;
+    padding-left: 25vw;
+    padding-right: 2vw;
+    height: auto;
+    float:right;
+}
+
+.contentBlock2 a{
+  color: inherit;
+  text-decoration: inherit;
+
+}
+.contentBlock2 a:hover{
+  color: #F0B7B4;
+
+}
+
+
+.contentBlock3{
+    background-color: #F13343;
+    grid-area: contentBlock3;
+    height: auto;
+    position: static;
+    max-width: 100%;
+    display: table;
+    
+}
+
+.contentBlock3 img{
+    max-width: 200px;
+    height: auto;
+    margin-left: 4vw;
+    float:left;
+}
+
+
+.contentBlock3 h2{
+    padding-top: 1em;
+    text-align: center;
+    color: #3B3D4F;
+    font-family: "Yu Gothic", Arial, sans-serif;
+        
+}
+
+.contentBlock3 h3{
+    float: left;
+    color: #3B3D4F;
+    display: inline-block;
+    font-size: 2vw;
+    font-family: "Yu Gothic", Arial, sans-serif;
+}
+
+.contentBlock3 p{
+    float: right;
+    max-width: 30vw;
+    color: #0D0D0D;
+    font-family: "Yu Gothic", Arial, sans-serif;
+    padding-right: 2vw;
+}
+
+
+.contentBlock3 a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.contentBlock4{
+    background-color: #0D0D0D;
+    grid-area: contentBlock4;
+    height: auto;
+    position: static;
+    font-family: "Yu Gothic", Arial, sans-serif;
+    
+}
+.contentBlock4 #profile{
+    max-width: 200px;
+    height: auto;
+    margin-left: 4vw;
+    float:left;
+}
+.contentBlock4 h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    color: #C9C6BD;
+    font-family: "Yu Gothic", Arial, sans-serif;
+    
+}
+.contentBlock4 p{
+    color: #C9C6BD;
+    float:right;
+    max-width: 30vw;
+    padding-right: 2vw;
+}
+
+.contentBlock5{
+    background-color: #3B3D4F;
+    grid-area: contentBlock5;
+    height: auto;
+    max-width: 100%;
+    position: static;
+    font-family: "Yu Gothic", Arial, sans-serif;
+    text-align: center;
+    align-content: center;
+    color:#E1DCC4;
+    
+}
+
+
+
+
+.footerBlock{
+    background-color: #C9C6BD;
+    grid-area: footerBlock;
+    height:auto;
+    padding-bottom: 2vh;
+    position: static;
+    font-family: "Yu Gothic", Arial, sans-serif;
+}
+.footerBlock img{
+    padding-left: 2vw;
+    padding-top: 2vh;
+    float:left;
+
+}
+.footerBlock #footBlock1{
+    display:block;
+    padding-left: 20vw;
+    padding-top: 2vh;
+    float: left;
+    
+}
+.footerBlock #footBlock2{
+    display:block;
+    padding-left: 20vw;
+    padding-top: 2vh;
+    float: left;
+    
+}
+.footerBlock #footBlock3{
+    display:block;
+    padding-left: 20vw;
+    padding-top: 2vh;
+    float: left;
+    
+}
